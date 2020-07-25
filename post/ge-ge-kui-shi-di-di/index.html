@@ -1,101 +1,119 @@
-
-<!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>哥哥窥视弟弟 | WiandMan</title>
-<meta name="description" content="不主流，没品且杂食">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://Wiand.github.io//favicon.ico?v=1595616738392">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="http://Wiand.github.io//favicon.ico?v=1595664528057">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="http://Wiand.github.io//styles/main.css">
-
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="alternate" type="application/atom+xml" title="哥哥窥视弟弟 | WiandMan - Atom Feed" href="http://Wiand.github.io//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
+    <meta name="description" content="（不能全发，我主要想测试一下嘻嘻
+
+我望着Kiron熟睡的身影，试图压低自己的喘息声，可这确实很糟糕，我的弟弟真的很迷人。等等，好像有人的呻吟声？我诧异，心咚咚直跳。捡起手边的t恤随意套在身上，屏住呼吸小心翼翼地打探到弟弟床边。
+我故意咳嗽..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="http://Wiand.github.io/">
-        <img class="avatar" src="http://Wiand.github.io//images/avatar.png?v=1595616738392" alt="" width="32px" height="32px">
-      </a>
-      <a href="http://Wiand.github.io/">
-        <h1 class="site-title">WiandMan</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="http://Wiand.github.io/">
+  <img class="avatar" src="http://Wiand.github.io//images/avatar.png?v=1595664528057" alt="">
+  </a>
+  <h1 class="site-title">
+    WiandMan
+  </h1>
+  <p class="site-description">
+    不主流，没品且杂食
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          废 话 连 篇
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          磕 粮 机 器
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          没 品 杂 食
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          赛 博 狗 洞
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/WiandMan" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://mobile.twitter.com/WiandBoom" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://weibo.com/MSBxiaxia" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/suwei4021" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.facebook.com/profile.php?id=100041972951700" target="_blank">
+          <i class="ri-facebook-line"></i>
+        </a>
+      
+    
   </div>
 </div>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            废 话 连 篇
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            脑 残 黄 文
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            乐 不 可 支
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            赛 博 狗 洞
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
         <div class="post-detail">
-          
-          <h2 class="post-title">哥哥窥视弟弟</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2020-07-23</span>
+          <article class="post">
+            <h2 class="post-title">
+              哥哥窥视弟弟
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-07-25
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
             
-          </div>
-          <div class="post-content">
-            <p>“妈妈会听见的。”他被吓到了。</p>
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>（不能全发，我主要想测试一下嘻嘻</p>
 <!-- more -->
-<p>我望着Kiron熟睡的身影，手不自然的伸到了老二处把半勃起的鸡巴掏了出来，一下一下地套弄着。<br>
-我试图压低自己的喘息声，可这确实很糟糕，我的弟弟真的很迷人。等等，好像有人的呻吟声？我诧异，心咚咚直跳。捡起手边的t恤随意套在身上，屏住呼吸小心翼翼地打探到弟弟床边。<br>
+<p>我望着Kiron熟睡的身影，试图压低自己的喘息声，可这确实很糟糕，我的弟弟真的很迷人。等等，好像有人的呻吟声？我诧异，心咚咚直跳。捡起手边的t恤随意套在身上，屏住呼吸小心翼翼地打探到弟弟床边。<br>
 我故意咳嗽一声，间接提醒了这位不注重隐私的小伙子他的耳机声音音量开的过大。<br>
 然而，他似乎没听见。<br>
 “Kiron，你在做什么？”<br>
@@ -103,99 +121,96 @@
 “是做噩梦了吗？”我胡乱鬼扯之后成功挤到了他的床上。<br>
 “你在看什么，我们一起看好不好？”<br>
 “Cassien，我觉得你不应该这样。”他的眼神在闪躲，我越觉得刺激。<br>
-“这有什么，你又不是gay。”我好像真的不在乎。<br>
-木质床板禁不住重量发出咯吱咯吱的响动，他蜷缩在床的一边，盖着他的毯子我把鸡巴掏出来继续撸，妈的又硬了一圈。<br>
-他侧着身子，我靠在他左侧。<br>
-他打开了手里的pad，画面继续刚才的运动，不过令我没想到的是，Kiron看的是GV。<br>
-我克制着自己内心的激动，“嘿，原来我亲爱的弟弟喜欢男生啊。”<br>
-怎么还不好意思上了。<br>
-我试探的把右手伸到他的老二处，左手依然为自己服务，视频里的男主角们纷纷达到高潮，他没拒绝我。<br>
-触感告诉我这个毫无性经验的小处男已经熄火了。<br>
-掏回左手，把他翻过来朝向我。手指点弄着他可爱小巧的鼻子，“我们试一试好不好。”<br>
-“妈妈会听见的。”他被吓到了。<br>
-“那个婊子不知道又去和哪个男人鬼混了。”听到他提到继母时，我终于不耐烦了。<br>
-粗鲁的把他的腿分开，扯下他的内裤，用他粘稠的精液替他紧致的后庭扩张。一根，两根，三根之后，括约肌舒张开。我匆匆撸动了几下鸡巴，对准了那个小洞挺进了腰身。Kiron被我突然的进攻撞得直抖，但同时龟头剐蹭到了他的腺体，他被痛苦地爽哭了。<br>
-我动情着亲吻他的嘴唇，用力的想把他印在自己的身体里。我爱他，可是我又同时恨他跟那个女人，牙齿用力啃咬他，舌头伸入口腔中舔弄，血腥味在黑暗中散发着刺鼻的味道。<br>
-没有被完全开拓的肠道温热紧致，我每挺进送出，头皮酥麻。Kiron从痛苦到高潮，身体痉挛。我用力拍打着他结实的臀部，草，被夹紧的感觉真他妈爽爆了，“你简直同那个女人一样，天生的婊子。”<br>
-接着我开始用尽全力，床也一同嘎吱嘎吱参与进来。<br>
-我他妈真想在这床上操死Kiron，我亲爱的弟弟。<br>
-而且我知道，只要我是爱他的就算不上糟蹋。<br>
-我掐着他的腰，尽情的耸动。<br>
-Kiron眼角挂着泪，嘴角被我啃破了皮，嘴里发出来的只是嗯嗯嗯啊啊的呻吟声，听起来高潮又快来了，天知道这是第几次了。<br>
-我把他抱起来，让他贴在我疯狂的坚挺肌肉上面，坏笑道“没有保险套了哦弟弟”。</p>
+“这有什么，你又不是gay。”我好像真的不在乎。</p>
+<p>（不能全发，我主要想测试一下嘻嘻</p>
 
-          </div>
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
         </div>
 
         
-      </div>
-
-      
-        
-          <div id="gitalk-container"></div>
-        
 
         
-      
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-      <div class="site-footer">
-  <div class="slogan">不主流，没品且杂食</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://Wiand.github.io//atom.xml" target="_blank">RSS</a>
-</div>
+<div id="gitalk-container"></div>
 
+<script>
 
-    </div>
-    <script type="application/javascript">
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
 
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+  gitalk.render('gitalk-container')
 
 </script>
 
+          
 
+          
+        
 
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="http://Wiand.github.io//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
     <script>
+      hljs.initHighlightingOnLoad()
 
-      var gitalk = new Gitalk({
-        clientID: '',
-        clientSecret: '',
-        repo: '',
-        owner: '',
-        admin: [''],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
 
-      gitalk.render('gitalk-container')
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
 
     </script>
-  
-
-  
-
-
-
-
   </body>
 </html>
